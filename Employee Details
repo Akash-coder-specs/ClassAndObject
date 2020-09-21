@@ -1,0 +1,21 @@
+public class ClassAndObject {
+
+	public static void main(String[] args) {
+		Employee e=new Employee();
+		System.out.println("Name\t   Year of joining\t  Address");
+		e.emp();
+	}
+
+}
+
+class Employee{
+	void emp() {
+		String a[][]= {{"Robert","1944","64c-WallsStreet"},{"Sam","2000","68D-WallsStreet"},{"John","1999","26B-WallsStreet"}};
+		for(int i=0;i<a.length;i++) {
+			for(int j=0;j<a.length;j++) {
+				System.out.print(a[i][j]+"\t\t");
+			}
+			System.out.println();
+		}
+	}
+}
